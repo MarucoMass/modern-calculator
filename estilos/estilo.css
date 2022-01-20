@@ -1,0 +1,74 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#F06966), to(#FAD6A6));
+  background: linear-gradient(to right, #F06966, #FAD6A6);
+}
+
+#calculadora {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (75px)[4];
+      grid-template-columns: repeat(4, 75px);
+  -ms-grid-rows: minmax(100px, auto) (75px)[5];
+      grid-template-rows: minmax(100px, auto) repeat(5, 75px);
+}
+
+#calculadora > button {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#calculadora > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#visor {
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+#resultado {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#cuenta {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+/*# sourceMappingURL=estilo.css.map */
