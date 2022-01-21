@@ -35,13 +35,13 @@ body{
     word-wrap: break-word;
     word-break: break-all;
 }
-#resultado{
-    font-size: 1rem;
-    color: rgba(255, 255, 255, .75);
-}
-#cuenta{
+#current{
     font-size: 2rem;
     color: rgba(255, 255, 255, .9);
+}
+#previous{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .75); 
 }
 .span-two{
     grid-column: span 2;
